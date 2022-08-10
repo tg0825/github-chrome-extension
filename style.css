@@ -1,0 +1,16 @@
+html body {
+  background-image: url('chrome-extension://jdgidikigbnnhfoihhdhimpkiklkgjnm/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 150px 150px;
+  background-attachment: fixed;
+}
+
+.container-xl {
+  max-width: 100% !important;
+}
+
+.lh-default {
+  margin: 10px auto;
+  display: block;
+}

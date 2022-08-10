@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Github Title Copy Machine",
+  "description": "깃헙 타이틀 복붙이 귀찮아서 만든 확장기능",
+  "version": "0.1.0",
+  "icons": {
+    "16": "/icon/icon16.png",
+    "48": "/icon/icon48.png",
+    "128": "/icon/icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["/images/*"],
+    "matches":["<all_urls>"],
+    "extension_ids": ["jdgidikigbnnhfoihhdhimpkiklkgjnm"]
+  }],
+  "content_scripts": [{
+    "matches": [
+      "https://github.com/barogo/*"
+    ],
+    "css": ["style.css"],
+    "js": [
+      "jquery.js",
+      "script.js"
+    ],
+    "run_at": "document_end"
+  }]
+}
